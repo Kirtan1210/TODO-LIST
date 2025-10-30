@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: rgb(106, 207, 207);
+}
+
+.main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.ta-wrapper {
+  background-color: gray;
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px 7px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  max-width: 90%;
+}
+
+.heading h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: rgba(251, 252, 249, 0.8);
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+}
+
+.input-wrapper button {
+  background-color: #e55c8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.input-wrapper button:hover {
+  background-color: #c94b76;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.todo-item input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 70%;
+  font-size: 16px;
+}
+
+.todo-item .actions i {
+  color: #e55c8a;
+  border: 1px solid #e55c8a;
+  padding: 6px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 5px;
+}
+
+.todo-item .actions i:hover {
+  background-color: #e55c8a;
+  color: white;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
